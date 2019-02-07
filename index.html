@@ -6,6 +6,8 @@
         <link rel="stylesheet" href="styles/grid.css">
         <link rel="stylesheet" href="styles/color.css"> 
         <link rel="stylesheet" href="styles/style.css"> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/navigator.js"></script>
     </head>
     <body class="wrapper">
         <div class="navigation-container">
@@ -13,42 +15,30 @@
             <nav class="nav">
                 <ul>
                     <li>
-                        <a href="#">Item 1</a>
+                        <span class="nav-item" data-target="item-1">item-1</span>
                     </li>
                     <li>
-                        <a href="#">Item 1</a>
+                        <span class="nav-item" data-target="item-2">item-2</span>
                     </li>
                     <li>
-                        <a href="#">Item 1</a>
+                        <span class="nav-item" data-target="item-3">item-3</span>
                     </li>
                     <li>
-                        <a href="#">Item 1</a>
+                        <span class="nav-item" data-target="item-4">item-4</span>
                     </li>
                     <li>
-                        <a href="#">Item 1</a></li>
+                        <span class="nav-item" data-target="item-5">item-5</span>
+                    </li>
                 </ul>
             </nav>
         </div>
-        <div class="canvas-container">
-            <div class="canvas">
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content Box content Box content Box content Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content<br>Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
-                <div class="box">Box content</div>
+        <div class="canvas-container" id="canvas-container">
+            <div class="canvas" id="canvas">
+                <div class="box" id="item-1">Box item-1</div>
+                <div class="box" id="item-2">Box item-2</div>
+                <div class="box" id="item-3">Box item-3</div>
+                <div class="box" id="item-4">Box item-4</div>
+                <div class="box" id="item-5">Box item-5</div>
             </div>
         </div>
     </body>

@@ -1,17 +1,8 @@
+.box {
+    background-color: #e2e7ee;
+    border-color: #68717c;
+}
 
 .navigation-container {
-    background-color: #808080;
-}
-
-.canvas-container {
-    background-color: #dbdbdb;
-}
-
-.box-container {
-    background-color: #ff00ff;
-}
-
-.box {
-    background-color: blueviolet;
-    border-color: blue;
+    background-color: #d2d7df;
 }
