@@ -4,8 +4,66 @@ body {
 
 .box {
 	border-style: solid;
+	font-size: 0.9em;
+	line-height: 1.8em;
+	border-width: 2px;
+	transition-property: border-color, box-shadowm;
+	transition-duration: 300ms;
 }
 
 .nav-item {
 	cursor: pointer;
+	transition: background-color 300ms;
+	line-height: 1.8em;
+}
+
+.form-successfully,
+.form-is-loading {
+    visibility: hidden;
+}
+
+.form-is-loading {
+	background-image: url("../assets/spinner.svg");
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+textarea:active,
+textarea:focus,
+input:active,
+input:focus {
+	outline: none;
+}
+
+textarea {
+	resize: vertical;
+}
+
+textarea,
+input {
+	border-width: 2px;
+	border-style: solid;
+	transition-property: border-color;
+	transition-duration: 300ms;
+}
+
+input[type="submit"] {
+    border-width: 0;
+}
+
+.box h3 {
+	font-weight: 300;
+	font-size: 2.2em;
+}
+
+label {
+	font-size: 0.8em;
+    font-weight: 700;
+}
+
+input,
+textarea {
+	font-size: 1em;
+	font-weight: 400;
+	padding: 8px;
 }
