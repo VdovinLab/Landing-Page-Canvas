@@ -36,4 +36,31 @@ $(document).ready(function() {
 
 	});
 
+	$("#contact-form").submit(function(event) {
+		event.preventDefault();
+
+		var formData = $(this).serialize();
+		
+		$(".form-container").addClass("hidden");
+		$(".form-is-loading").addClass("initial");
+
+		$.ajax({
+			type: "POST",
+			url: $(this).attr( "action" ),
+			data: formData
+			}).done(function() {
+
+				$( ".form-is-loading" ).removeClass( "initial" );
+				$( ".form-successfully" ).addClass( "initial" );
+				
+		}).fail(function() {
+			
+			$( ".form-is-loading" ).removeClass( "initial" );
+			$( ".form-successfully" ).addClass( "initial error" );
+			$( ".form-successfully" ).html( $('input[name="error-text"]').val() + '<a href="mailto:'+ $('input[name="email-to"]').val() +'?Subject='+ $('input[name="subject"]').val() +'">'+ $('input[name="email-to"]').val() +'</a>');
+			
+		});
+
+	});
+
   });

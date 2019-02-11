@@ -8,6 +8,10 @@
     box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
+a {
+    color: #ee605f;
+}
+
 .box.selected {
     border-color: #246fca;
     box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.4);
@@ -24,6 +28,10 @@
 textarea,
 input {
 	border-color: #68717c;
+}
+
+.form-successfully.error {
+    color: #ee605f;
 }
 
 input:focus,

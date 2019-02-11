@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="styles/color.css"> 
         <link rel="stylesheet" href="styles/style.css"> 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="js/navigator.js"></script>
+        <script src="js/other.js"></script>
     </head>
     <body class="wrapper">
         <div class="navigation-container">
-            <div class="logo-container">Logo</div>
+            <div class="logo-container">Logo<br>dbdf</div>
             <nav class="nav">
                 <ul>
                     <li>
@@ -45,17 +45,23 @@
                 <div class="box" id="item-5">Box item-5</div>
                 <div class="box" id="contact">
                     <h3>Contact</h3>
-                    <form class="contact-form">
-                        <div class="form-row">
-                            <label>Your e-mail: <span class="required">*</span></label>
-                            <input type="email" name="email" placeholder="Enter your email" required>
-                        </div>
-                        <div class="form-row">
-                            <label>Textarea <span class="required">*</span></label>
-                            <textarea name="textarea" placeholder="Placeholder" rows="6" cols="48" required></textarea>
-                        </div>
-                        <div class="form-row">
-                            <input type="submit" value="Submit">
+                    <form class="contact-form" id="contact-form" action="action-form.php">
+                        <div class="form-container">
+                            <input type="hidden" name="email-to" value="box@vdovinlab.com">
+                            <input type="hidden" name="subject" value="Subject Again">
+                            <input type="hidden" name="error-text" value="There was an error submitting the form. Please write to email:">
+                            <input type="hidden" name="answering" value="Answering text">
+                            <div class="form-row">
+                                <label>Your e-mail: <span class="required">*</span></label>
+                                <input type="email" name="email" placeholder="Enter your email">
+                            </div>
+                            <div class="form-row">
+                                <label>Textarea <span class="required">*</span></label>
+                                <textarea name="textarea" placeholder="Placeholder" rows="6" cols="48"></textarea>
+                            </div>
+                            <div class="form-row">
+                                <input type="submit" value="Submit">
+                            </div>
                         </div>
                         <div class="form-is-loading"></div>
                         <div class="form-successfully">

@@ -4,6 +4,7 @@
 }
 body {
     font-size: 16px;
+    min-width: 320px;
 }
 
 html {
@@ -55,7 +56,7 @@ html {
 
 .logo-container {
     align-self: center;
-    margin-bottom: 20px;
+    margin: 20px;
 }
 
 .nav ul {
@@ -87,3 +88,49 @@ html {
     justify-content: center;
     text-align: center;
 }
+
+@media only screen and (max-width: 1024px) {
+
+    .canvas {
+        width: 100%;
+        min-height: 100%;
+    }
+    
+    .box {
+        margin: 5vw;
+    }
+
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    .wrapper {
+        flex-direction: column;
+    }
+
+    .box {
+        margin: 20px 10px;
+        min-width: auto;
+        min-height: auto;
+        max-width: 280px;
+        padding: 20px 10px;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .navigation-container {
+        width: auto;
+    }
+
+    .canvas {
+        padding-bottom: 64px;
+    }
+    
+    .logo-container {
+        margin: 10px;
+    }
+
+} 
