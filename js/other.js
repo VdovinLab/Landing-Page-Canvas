@@ -76,3 +76,7 @@ $(document).ready(function() {
 	});
 
   });
+
+window.onload = function () {
+	$( '.is-loading' ).addClass( 'hidden' );
+}
