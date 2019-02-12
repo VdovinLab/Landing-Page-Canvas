@@ -63,4 +63,16 @@ $(document).ready(function() {
 
 	});
 
+	$( '#canvas-container' ).scroll(function() {
+
+		var offset = $( '#canvas' ).offset()
+
+		var backgroundOffsetLeft = Math.abs(offset.left - $( '.navigation-container' ).width()) / $( '#canvas-container' ).width() * 100
+
+		var backgroundOffsetTop = Math.abs(offset.top) / $( '#canvas-container' ).height() * 100
+
+		$( '.wrapper' ).css('background-position', (backgroundOffsetLeft / 10) + '% ' + (backgroundOffsetTop / 10) + '%')
+
+	});
+
   });
